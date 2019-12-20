@@ -48,9 +48,9 @@ defmodule LullabeamRpi3.MixProject do
 
   defp deps do
     [
-      {:nerves, "~> 1.3", runtime: false},
-      {:nerves_system_br, "1.6.6", runtime: false},
-      {:nerves_toolchain_arm_unknown_linux_gnueabihf, "1.1.0", runtime: false},
+      {:nerves, "~> 1.5.0", runtime: false},
+      {:nerves_system_br, "1.10.0", runtime: false},
+      {:nerves_toolchain_arm_unknown_linux_gnueabihf, "1.2.0", runtime: false},
       {:nerves_system_linter, "~> 0.3.0", runtime: false},
       {:ex_doc, "~> 0.18", only: [:dev, :test], runtime: false}
     ]
@@ -81,7 +81,7 @@ defmodule LullabeamRpi3.MixProject do
       "fwup-revert.conf",
       "fwup.conf",
       "LICENSE",
-      "linux-4.14.defconfig",
+      "linux-4.19.defconfig",
       "mix.exs",
       "nerves_defconfig",
       "post-build.sh",
